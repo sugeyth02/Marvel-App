@@ -1,0 +1,43 @@
+@use './../../variables' as variables;
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 40px 40px 40px;
+    gap:10px;
+    
+    h1{
+        font-family: variables.$font-stack;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
+}
+.container__delete{
+  background-color: variables.$red-dark;
+  padding: 10px;
+  border:none;
+  border-radius: 6px;
+  color:variables.$white;
+  font-family: variables.$font-stack;
+  font-weight: 500;
+  font-size:1rem;
+  &:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    color:black;
+  }
+}
+.container__cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 435px) {
+  .container__cards {
+    justify-content: center;
+    gap: 8px;
+  }
+}

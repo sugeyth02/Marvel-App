@@ -1,0 +1,104 @@
+@use './../../variables' as variables;
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 45px 45px 45px 90px;
+  gap: 50px;
+  color: white;
+}
+.back {
+  position: fixed;
+  top: 137px;
+  color: white;
+  font-size: 1.7rem;
+  left: 4px;
+  &:hover {
+    cursor: pointer;
+    color: variables.$red;
+  }
+}
+.container__background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  transform: scale(1.05);
+  filter: blur(16px);
+  -webkit-filter: blur(16px);
+  z-index: -1;
+}
+.container__info {
+  font-family: variables.$font-stack;
+  width:30%;
+  h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+     padding: 8px 0;
+  }
+  p {
+    font-size: 1.1rem;
+    font-size: 400;
+    span {
+      font-size: 1.3rem;
+      font-size: 500;
+    }
+  }
+}
+
+.info__containers {
+  width:100%;
+  p {
+    font-size: 1.3rem;
+    font-size: 500;
+    padding: 8px 0;
+  }
+}
+
+.container__comics, .container__stories{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+}
+
+.container__comics{
+  .chip{
+ background-color: rgba(39, 50, 197, 0.822);
+  }
+
+}
+.container__stories{
+  .chip{
+    background-color: rgb(122, 57, 182);
+  }
+}
+
+.chip{
+  font-size: 1.1;
+  list-style: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  width:100%;
+}
+
+@media (max-width: 630px) {
+  .container {
+    padding: 60px;
+  }
+  .back {
+    top: 225px;
+  }
+  .container__info{
+   width:100%;
+  }
+}

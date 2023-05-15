@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Stories list view should renders a list of stories initially 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <h1
+      class="container__header"
+    >
+      MARVEL STORIES LIST
+    </h1>
+    <div
+      class="container__filters"
+    >
+      <div
+        class="filters__select"
+      >
+        <label
+          for="characters"
+        >
+          Characters:
+        </label>
+        <select
+          id="characters"
+          name="characters"
+        />
+      </div>
+    </div>
+    <div
+      class="container__items"
+    >
+      <li
+        class="item"
+      >
+        Investigating the murder of a teenage girl, Cage suddenly learns that a three-way gang war is under way for control of the turf
+      </li>
+      <li
+        class="item"
+      >
+        Ever-expanding their ranks, the Children of the Atom combat the evils threatening both mutants and humans Ñ like the Brotherhood
+      </li>
+    </div>
+    <div
+      class="container"
+    >
+      <button
+        class="container__button"
+        disabled=""
+      >
+        <i
+          class="fa-solid fa-angle-left"
+        />
+      </button>
+      <div
+        class="numbers"
+      />
+      <button
+        class="container__button"
+      >
+        <i
+          class="fa-solid fa-angle-right"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+`;

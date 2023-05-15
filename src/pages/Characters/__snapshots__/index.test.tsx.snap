@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Characters list view should renders a list of characters initially 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="header"
+      >
+        <a
+          class="header__link"
+          href="/"
+        >
+          <img
+            alt="Marvel logo"
+            class="header_img"
+            src="/img/Marvel_Logo.svg.png"
+          />
+        </a>
+        <div
+          class="buttons"
+        >
+          <button
+            class="button__hidden"
+          >
+            <i
+              class="fa-solid fa-eye"
+            />
+          </button>
+          <a
+            href="/bookmark"
+          >
+            <i
+              class="fa-solid fa-bookmark"
+            />
+          </a>
+        </div>
+      </div>
+      <ul
+        class="pages"
+      >
+        <li
+          class="pages__link"
+        >
+          <a
+            href="/characters"
+          >
+            CHARACTERS
+          </a>
+        </li>
+        <li
+          class="pages__link"
+        >
+          <a
+            href="/comics"
+          >
+            COMICS
+          </a>
+        </li>
+        <li
+          class="pages__link"
+        >
+          <a
+            href="/stories"
+          >
+            STORIES
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="outlet"
+    >
+      <div
+        class="container"
+      >
+        <h1
+          class="container__header"
+        >
+          MARVEL CHARACTERS LIST
+        </h1>
+        <div
+          class="searchBar"
+        >
+          <button
+            class="searchBar_button"
+          >
+            <i
+              class="fa-solid fa-magnifying-glass"
+            />
+          </button>
+          <label
+            class="searchBar__label"
+            for="search"
+          >
+            search
+          </label>
+          <input
+            class="searchBar__input"
+            name="search"
+            placeholder="SEARCH"
+            type="text"
+          />
+        </div>
+        <div
+          class="container"
+        >
+          <div
+            class="container__filters"
+          >
+            <div
+              class="filters__select"
+            >
+              <label
+                for="comics"
+              >
+                Comics:
+              </label>
+              <select
+                id="comics"
+                name="comics"
+              />
+            </div>
+            <div
+              class="filters__select"
+            >
+              <label
+                for="stories"
+              >
+                Stories:
+              </label>
+              <select
+                id="stories"
+                name="stories"
+              />
+            </div>
+          </div>
+          <div
+            class="container__cards"
+          >
+            <div
+              class="container"
+            >
+              <div
+                class="container__image"
+                style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/c/e0/535fecbbb9784/portrait_fantastic.jpg);"
+              />
+              <div
+                class="container__info"
+              >
+                <h1>
+                  3-D Man
+                </h1>
+                <div
+                  class="buttons"
+                >
+                  <button
+                    class="container__hide"
+                  >
+                    <i
+                      class="fa-solid fa-eye-slash"
+                    />
+                  </button>
+                  <button
+                    class="container__bookMark "
+                    data-testid="bookmark"
+                  >
+                    <i
+                      class="fa-solid fa-bookmark"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div
+              class="container"
+            >
+              <div
+                class="container__image"
+                style="background-image: url(http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/portrait_fantastic.jpg);"
+              />
+              <div
+                class="container__info"
+              >
+                <h1>
+                  Alain
+                </h1>
+                <div
+                  class="buttons"
+                >
+                  <button
+                    class="container__hide"
+                  >
+                    <i
+                      class="fa-solid fa-eye-slash"
+                    />
+                  </button>
+                  <button
+                    class="container__bookMark "
+                    data-testid="bookmark"
+                  >
+                    <i
+                      class="fa-solid fa-bookmark"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="container"
+          >
+            <button
+              class="container__button"
+              disabled=""
+            >
+              <i
+                class="fa-solid fa-angle-left"
+              />
+            </button>
+            <div
+              class="numbers"
+            />
+            <button
+              class="container__button"
+            >
+              <i
+                class="fa-solid fa-angle-right"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="container"
+    >
+      <img
+        alt="Marvel logo"
+        class="container__img"
+        src="/img/m_logo.png"
+      />
+      <p
+        class="container__reserved"
+      >
+        Data provided by Marvel. © 2014 Marvel
+      </p>
+      <div
+        class="container__info"
+      >
+        <a
+          class="info__link"
+          href="https://help.marvel.com/hc/en-us"
+        >
+          Contact Us
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

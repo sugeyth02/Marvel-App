@@ -1,0 +1,76 @@
+@use './../../variables' as variables;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: variables.$base-color;
+}
+.header {
+  height: 50px;
+}
+
+.buttons {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  display: flex;
+  gap: 10px;
+
+   i {
+    color: variables.$white;
+    font-size: 1.5rem;
+    &:hover {
+      color: variables.$red;
+      cursor: pointer;
+    }
+  }
+}
+.button__hidden {
+  background: none;
+  border: none;
+  &:hover {
+    color: variables.$red;
+    cursor: pointer;
+  }
+}
+.header_img {
+  height: 50px;
+  width: 130px;
+  margin: 0 auto;
+}
+.pages {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  border-top: 0.5px solid rgb(92, 90, 90);
+  list-style: none;
+
+  &__link {
+    text-align: center;
+    width: 33%;
+    height: 100%;
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: variables.$white;
+      font-family: variables.$font-stack;
+      font-size: 1rem;
+      padding: 12px;
+      font-weight: 500;
+      height: 100%;
+      border-bottom: 1px solid variables.$base-color;
+      &:hover {
+        color: variables.$red;
+        border-bottom: 1px solid variables.$red;
+      }
+    }
+  }
+}
+@media (max-width: 360px) {
+  .pages__link {
+    width: 100%;
+  }
+}

@@ -1,0 +1,16 @@
+@use './../../variables' as variables;
+.item{
+    padding: 20px;
+    list-style: none;
+    font-family: variables.$font-stack;
+    font-size:1rem;
+    font-weight: 400;
+    background-color: rgb(207, 207, 207);
+    margin-bottom: 10px;
+    border-radius: 6px;
+    &:hover{
+        cursor:pointer;
+        background-color: variables.$red-dark;
+        color:variables.$white;
+    }
+}

@@ -1,0 +1,13 @@
+@use './../../variables' as variables;
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding: 60px 20px 20px 20px;
+}
+.container__header{
+    font-family: variables.$font-stack;
+    font-weight: 500;
+    font-size: 1.5rem;
+}

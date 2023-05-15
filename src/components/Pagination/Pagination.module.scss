@@ -1,0 +1,37 @@
+@use './../../variables' as variables;
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:30px 0;
+}
+.numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.container__button {
+  padding: 10px 20px;
+  background-color: variables.$white;
+  color: variables.$base-color;
+  border: none;
+  font-size: 1rem;
+  font-family: variables.$font-stack;
+  border-radius: 20px;
+}
+.currentPage {
+  background-color: variables.$blue;
+  color: variables.$white;
+}
+.container__button:hover {
+  background-color: variables.$color-gray_soft;
+  cursor: pointer;
+}
+.container__button:disabled {
+  background-color: variables.$color-gray_soft;
+  color: variables.$color-gray_strong;
+  cursor: not-allowed;
+}

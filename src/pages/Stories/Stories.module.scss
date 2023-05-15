@@ -1,0 +1,41 @@
+@use './../../variables' as variables;
+
+.container {
+  padding: 60px 20px 20px 20px;
+}
+.container__header {
+  font-family: variables.$font-stack;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+.container__filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 30px 0;
+  width: 100%;
+
+  label {
+    font-family: variables.$font-stack;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  select {
+    padding: 4px;
+    font-family: variables.$font-stack;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .container__filters {
+    justify-content: flex-start;
+  }
+  .container__filters {
+    select {
+      width: 40%;
+    }
+  }
+}
